@@ -20,15 +20,13 @@
 .barWrapper path {
     transition: all 0.3s;
     cursor: pointer;
+    opacity: 1;
+}
+
+.barWrapper .selected~* {
     opacity: 0.4;
 }
 
-.barWrapper .selected,
-.barWrapper .selected~path {
-    opacity: 1;
-}
-
-.barWrapper path:hover,
-.barWrapper path:hover~path {
-    opacity: 1;
+.barWrapper path:hover~* {
+    opacity: 0.4 !important;
 }
