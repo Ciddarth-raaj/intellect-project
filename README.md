@@ -5,7 +5,7 @@
 <Widget1 size={200} />
 ```
 
-#### Widget 2
+### Widget 2
 ![](assets/Screenshot%202022-11-23%20at%208.29.48%20PM.png)<!-- {"width":159} -->
 ```
 <Widget2
@@ -14,7 +14,7 @@
 	showStatus={true} />
 ```
 
-#### Linear Slider
+### Linear Slider
 ![](assets/Screenshot%202022-11-23%20at%208.30.11%20PM.png)<!-- {"width":254} -->
 ```
 const [value, setValue] = useState(0)
@@ -26,7 +26,7 @@ const [value, setValue] = useState(0)
 	setValue={setValue} />
 ```
 
-#### Circular Progress
+### Circular Progress
 ![](assets/Screenshot%202022-11-23%20at%208.30.33%20PM.png)<!-- {"width":163} -->
 ```
 const [value, setValue] = useState(0)
@@ -40,19 +40,19 @@ const [value, setValue] = useState(0)
 ```
 
 # Options
-#### Widget 1
+### Widget 1
 | Property | Type | Description        | Default |
 |----------|------|--------------------|---------|
 | size     | Int  | Size of the widget | 200     |
 
-#### Widget 2
+### Widget 2
 | Property     | Type    | Description                                    | Default |
 |--------------|---------|------------------------------------------------|---------|
 | width        | Int     | Size of the widget                             | 200     |
 | defaultValue | Int     | Default value of the widget (0-4)              | 0       |
 | showStatus   | Boolean | To display the status text (Low, Medium, High) | true    |
 
-#### Linear Slider
+### Linear Slider
 | Property | Type     | Description                 | Default |
 |----------|----------|-----------------------------|---------|
 | width    | Int      | Width of the widget         | 200     |
@@ -61,7 +61,7 @@ const [value, setValue] = useState(0)
 | value    | Int      | Value of the widget         | -       |
 | setValue | Function | function with 1 parameter   | -       |
 
-#### Circular Progress
+### Circular Progress
 | Property    | Type | Description                       | Default |
 |-------------|------|-----------------------------------|---------|
 | size        | Int  | Size of the widget                | 200     |
