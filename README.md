@@ -27,7 +27,7 @@ const [value, setValue] = useState(0)
 ```
 
 ### Circular Progress
-![](assets/circular.png)<!-- {"width":163} -->
+![](assets/circle.png)<!-- {"width":163} -->
 ```
 const [value, setValue] = useState(0)
 
