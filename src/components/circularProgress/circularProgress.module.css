@@ -1,33 +1,4 @@
-.mainCircle {
-    display: flex;
-}
-
-.mainCircle div {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dottedCircle {
-    padding: 20px;
-    border: 5px dotted rgba(255, 255, 255, 0.1);
-}
-
-.filledInnerCircle {
-    padding: 10px;
-    background-color: #446a79;
-    padding: 20px;
-}
-
-.centerCircle {
-    background-color: #77dbe6;
-}
-
-.centerCircle p {
-    color: white;
-    font-weight: bolder;
-    font-size: 22px;
+.percentageText {
+    font-size: 23px;
+    font-weight: bold;
 }

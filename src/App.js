@@ -6,7 +6,7 @@ import CircularProgress from './components/circularProgress/circularProgress';
 function App() {
   return (
     <div>
-      <CircularProgress style={{ marginBottom: "30px" }} />
+      <CircularProgress parentStyle={{ marginBottom: "30px" }} />
       <LinearSlider max={10} />
     </div>
   );
