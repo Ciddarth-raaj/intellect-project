@@ -10,8 +10,13 @@ const bars = [
   "M4.34164 8.68328C2.34694 4.69387 5.24791 0 9.7082 0L94.2918 0C98.7521 0 101.653 4.69387 99.6584 8.68328L97.6584 12.6833C96.642 14.716 94.5644 16 92.2918 16H11.7082C9.43557 16 7.35799 14.716 6.34164 12.6833L4.34164 8.68328Z",
 ];
 
-const Widget2 = () => {
-  const [value, setValue] = useState(0);
+// Props
+// width - width of the widget
+// defaultValue - default value of the widget
+// showStatus - display text with the status (High, Medium, Low)
+
+const Widget2 = ({ width = "200px", defaultValue = 0, showStatus = true }) => {
+  const [value, setValue] = useState(defaultValue);
 
   const handleValueChange = (index) => {
     setValue(index);
@@ -30,15 +35,9 @@ const Widget2 = () => {
   };
 
   return (
-    <div className={styles.barWrapper}>
-      <p>{statusText()}</p>
-      <svg
-        width={104 * 2.2}
-        height={109 * 2.2}
-        viewBox="0 0 104 109"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+    <div className={styles.barWrapper} style={{ width: width }}>
+      {showStatus && <p>{statusText()}</p>}
+      <svg viewBox="0 0 104 109" fill="none" xmlns="http://www.w3.org/2000/svg">
         {bars.map((d, index) => (
           <path
             d={d}

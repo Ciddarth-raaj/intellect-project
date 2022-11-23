@@ -2,6 +2,12 @@ import React from "react";
 
 import styles from "./circularProgress.module.css";
 
+// Props
+// size - size of the widget (sets height and width)
+// value - value to be displayed
+// percentage - percentage of the progress
+// strokeWidth - width of the progress
+
 const CircularProgress = ({
   size = 200,
   parentStyle,
@@ -9,17 +15,11 @@ const CircularProgress = ({
   percentage = 0,
   strokeWidth = 3,
 }) => {
-  // Size of the enclosing square
   const sqSize = size;
-  // SVG centers the stroke width on the radius, subtract out so circle fits in square
   const radius = size / 2;
-  // Enclose cicle in a circumscribing square
   const viewBox = `0 0 ${sqSize} ${sqSize}`;
-
   const progressRadius = radius - size / 10;
-  // Arc length at 100% coverage is the circle circumference
   const dashArray = progressRadius * Math.PI * 2;
-  // Scale 100% coverage overlay with the actual percent
   const dashOffset = dashArray - (dashArray * percentage) / 100;
 
   const startX = size / 2;

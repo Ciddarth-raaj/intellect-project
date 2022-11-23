@@ -13,7 +13,7 @@ function App() {
       </div>
 
       <div className={styles.widgetContainer}>
-        <Widget2 />
+        <Widget2 width={200} defaultValue={4} showStatus={true} />
       </div>
     </div>
   );
