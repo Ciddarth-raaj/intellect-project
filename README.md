@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+#### Widget 1
+![](assets/Screenshot%202022-11-23%20at%208.29.19%20PM.png)<!-- {"width":155} -->
+```
+<Widget1 size={200} />
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Widget 2
+![](assets/Screenshot%202022-11-23%20at%208.29.48%20PM.png)<!-- {"width":159} -->
+```
+<Widget2
+	width={200}
+	defaultValue={4}
+	showStatus={true} />
+```
 
-## Available Scripts
+#### Linear Slider
+![](assets/Screenshot%202022-11-23%20at%208.30.11%20PM.png)<!-- {"width":254} -->
+```
+const [value, setValue] = useState(0)
 
-In the project directory, you can run:
+<LinearSlider
+	width={200}
+	max={10}
+	value={value}
+	setValue={setValue} />
+```
 
-### `npm start`
+#### Circular Progress
+![](assets/Screenshot%202022-11-23%20at%208.30.33%20PM.png)<!-- {"width":163} -->
+```
+const [value, setValue] = useState(0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<CircularProgress
+	size={200}
+	value={value}
+	setValue={setValue}
+	parentStyle={{ marginBottom: "30px" }}
+	percentage={(value / 10) * 100} />
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Options
+#### Widget 1
+| Property | Type | Description        | Default |
+|----------|------|--------------------|---------|
+| size     | Int  | Size of the widget | 200     |
 
-### `npm test`
+#### Widget 2
+| Property     | Type    | Description                                    | Default |
+|--------------|---------|------------------------------------------------|---------|
+| width        | Int     | Size of the widget                             | 200     |
+| defaultValue | Int     | Default value of the widget (0-4)              | 0       |
+| showStatus   | Boolean | To display the status text (Low, Medium, High) | true    |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Linear Slider
+| Property | Type     | Description                 | Default |
+|----------|----------|-----------------------------|---------|
+| width    | Int      | Width of the widget         | 200     |
+| min      | Int      | Minimum value of the slider | 0       |
+| max      | Int      | Maximum value of the slider | 100     |
+| value    | Int      | Value of the widget         | -       |
+| setValue | Function | function with 1 parameter   | -       |
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Circular Progress
+| Property    | Type | Description                       | Default |
+|-------------|------|-----------------------------------|---------|
+| size        | Int  | Size of the widget                | 200     |
+| value       | Int  | Value of the widget               | 0       |
+| percentage  | Int  | Percentage of the progress circle | 0       |
+| strokeWidth | Int  | Width of the progress circle      | 3       |
