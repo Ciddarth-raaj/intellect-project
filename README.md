@@ -1,5 +1,5 @@
 # Usage
-## Widget 1
+### Widget 1
 ![](assets/Screenshot%202022-11-23%20at%208.29.19%20PM.png)<!-- {"width":155} -->
 ```
 <Widget1 size={200} />
