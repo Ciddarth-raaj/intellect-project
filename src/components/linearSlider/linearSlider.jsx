@@ -25,6 +25,7 @@ const LinearSlider = ({
       onChange={(e) => setValue(e.target.value)}
       style={{ backgroundSize: `${(value * 100) / max}% 100%`, width: width }} // backgroundSize is used to set the unselected part
       value={value}
+      data-testid={"linear-slider"}
     />
   );
 };

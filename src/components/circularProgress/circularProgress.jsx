@@ -34,8 +34,8 @@ const CircularProgress = ({
           r={radius}
           fill="none"
           stroke="white"
-          stroke-opacity="0.38"
-          stroke-dasharray="5 12"
+          strokeOpacity="0.38"
+          strokeDasharray="5 12"
         />
         <circle cx={startX} cy={startY} r={progressRadius} fill="#446A79" />
 
@@ -68,6 +68,7 @@ const CircularProgress = ({
           dy=".3em"
           textAnchor="middle"
           fill="white"
+          data-testid={"counter"}
         >
           {value}
         </text>
