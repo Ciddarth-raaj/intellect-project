@@ -1,12 +1,12 @@
 # Usage
 ### Widget 1
-![](assets/Screenshot%202022-11-23%20at%208.29.19%20PM.png)<!-- {"width":155} -->
+![](assets/widget1.png)<!-- {"width":155} -->
 ```
 <Widget1 size={200} />
 ```
 
 ### Widget 2
-![](assets/Screenshot%202022-11-23%20at%208.29.48%20PM.png)<!-- {"width":159} -->
+![](assets/widget2.png)<!-- {"width":159} -->
 ```
 <Widget2
 	width={200}
@@ -15,7 +15,7 @@
 ```
 
 ### Linear Slider
-![](assets/Screenshot%202022-11-23%20at%208.30.11%20PM.png)<!-- {"width":254} -->
+![](assets/linear.png)<!-- {"width":254} -->
 ```
 const [value, setValue] = useState(0)
 
@@ -27,7 +27,7 @@ const [value, setValue] = useState(0)
 ```
 
 ### Circular Progress
-![](assets/Screenshot%202022-11-23%20at%208.30.33%20PM.png)<!-- {"width":163} -->
+![](assets/circular.png)<!-- {"width":163} -->
 ```
 const [value, setValue] = useState(0)
 
