@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 import styles from "./linearSlider.module.css";
 
-const LinearSlider = ({ min = 0, max = 100 }) => {
-  const [value, setValue] = useState(0); // used to store the value of the linear slider
-
+const LinearSlider = ({ min = 0, max = 100, value, setValue }) => {
   return (
     <input
       type="range"
