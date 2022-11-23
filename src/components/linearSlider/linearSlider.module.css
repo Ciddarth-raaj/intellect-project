@@ -1,0 +1,27 @@
+.linearscale {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+    background-image: linear-gradient(#6ddbe6, #6ddbe6);
+    background-repeat: no-repeat;
+}
+
+.linearscale::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #6ddbe6;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0 0 4px 2px rgba(85, 85, 85, 0.352);
+}
+
+.linearscale::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
