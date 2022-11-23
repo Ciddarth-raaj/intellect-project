@@ -8,6 +8,7 @@ const Widget1 = () => {
   return (
     <div>
       <CircularProgress
+        size={200}
         value={value}
         setValue={setValue}
         parentStyle={{ marginBottom: "30px" }}

@@ -16,7 +16,7 @@ const CircularProgress = ({
   // Enclose cicle in a circumscribing square
   const viewBox = `0 0 ${sqSize} ${sqSize}`;
 
-  const progressRadius = radius - 25;
+  const progressRadius = radius - size / 10;
   // Arc length at 100% coverage is the circle circumference
   const dashArray = progressRadius * Math.PI * 2;
   // Scale 100% coverage overlay with the actual percent
@@ -57,7 +57,7 @@ const CircularProgress = ({
         <circle
           cx={startX}
           cy={startY}
-          r={progressRadius - 20}
+          r={progressRadius - size / 10}
           fill="#77DBE6"
         />
 
