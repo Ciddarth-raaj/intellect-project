@@ -50,6 +50,7 @@ const CircularProgress = ({
           style={{
             strokeDasharray: dashArray,
             strokeDashoffset: dashOffset,
+            transition: "all 0.7s",
           }}
         />
 
