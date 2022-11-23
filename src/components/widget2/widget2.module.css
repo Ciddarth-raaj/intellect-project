@@ -1,0 +1,34 @@
+.barWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.barWrapper p {
+    color: white;
+}
+
+.barWrapper svg {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.barWrapper path {
+    transition: all 0.3s;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.barWrapper .selected,
+.barWrapper .selected~path {
+    opacity: 1;
+}
+
+.barWrapper path:hover,
+.barWrapper path:hover~path {
+    opacity: 1;
+}
