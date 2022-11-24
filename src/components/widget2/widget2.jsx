@@ -36,14 +36,16 @@ const Widget2 = ({ width = "200px", defaultValue = 0, showStatus = true }) => {
 
   return (
     <div className={styles.barWrapper} style={{ width: width }}>
-      {showStatus && <p>{statusText()}</p>}
+      {showStatus && <p data-testid="status-text">{statusText()}</p>}
       <svg viewBox="0 0 104 109" fill="none" xmlns="http://www.w3.org/2000/svg">
         {bars.map((d, index) => (
           <path
+            key={`bar-${index}`}
             d={d}
             fill="white"
             onClick={() => handleValueChange(index)}
             className={index == value ? styles.selected : ""}
+            data-testid={`bar-${index}`}
           />
         ))}
       </svg>
