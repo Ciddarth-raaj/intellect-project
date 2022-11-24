@@ -41,9 +41,11 @@ const [value, setValue] = useState(0)
 
 # Options
 ### Widget 1
-| Property | Type | Description        | Default |
-|----------|------|--------------------|---------|
-| size     | Int  | Size of the widget | 200     |
+| Property | Type | Description                 | Default |
+|----------|------|-----------------------------|---------|
+| size     | Int  | Size of the widget          | 200     |
+| max      | Int  | Maximum value of the slider | 100     |
+| min      | Int  | Minimum value of the slider | 0       |
 
 ### Widget 2
 | Property     | Type    | Description                                    | Default |
